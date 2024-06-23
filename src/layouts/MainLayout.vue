@@ -23,7 +23,7 @@
         <div></div>
       </q-toolbar>
     </q-header>
-    <q-drawer
+    <!-- <q-drawer
       v-model="leftDrawerOpen"
       :width="200"
       :breakpoint="0"
@@ -45,7 +45,7 @@
           />
         </q-list>
       </q-scroll-area>
-    </q-drawer>
+    </q-drawer> -->
 
     <q-page-container>
       <router-view />

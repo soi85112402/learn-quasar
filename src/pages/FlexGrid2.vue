@@ -1,95 +1,35 @@
 <template>
-  <q-page class="q-pa-xl">
-    <section class="q-mb-xl">
-      <div class="text-h4">FlexBox - Col</div>
-      <q-separator class="q-my-md" />
-      <div class="bg-yellow">
-        <div class="row q-gutter-x-md">
-          <div v-for="n in 4" :key="n" class="square">square</div>
-        </div>
-        <div class="q-gutter-y-md">
-          <div v-for="n in 4" :key="n" class="bg-primary">square</div>
-        </div>
+  <q-page padding>
+    <section class="row q-col-gutter-x-xl">
+      <div class="col-auto p-py-md">
+        <q-avatar size="150px">
+          <q-img src="/src/assets/logo.jpg" />
+        </q-avatar>
       </div>
-      <q-separator spaced />
-      <div class="bg-yellow">
-        <div class="row q-col-gutter-sm items-center">
-          <div class="col-3 col-sm-6 col-md-4 col-lg-3" v-for="n in 8" :key="n">
-            <q-card class="my-card">
-              <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-                <div class="absolute-bottom text-subtitle2 text-center">
-                  Title
-                </div>
-              </q-img>
-            </q-card>
+      <div class="col-grow column justify-between">
+        <div class="row items-center">
+          <span class="text-h6 text-weight-bold">name</span>
+          <q-space></q-space>
+          <div class="q-gutter-x-sm">
+            <q-btn label="프로필 편집"></q-btn>
+            <q-btn flat icon="more_horiz"></q-btn>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="q-mb-xl">
-      <div class="text-h4">FlexBox - Col</div>
-      <q-separator class="q-my-md" />
-      <div class="row">
-        <div class="border col-1">col-1</div>
-        <div class="border col-8">col-8</div>
-        <div class="border col-2">col-2</div>
-        <div class="border col-1">col-1</div>
-        <div class="border col-1">col-1</div>
-      </div>
-      <q-separator class="q-my-md" />
-      <div class="row">
-        <div class="border col">col-1</div>
-        <div class="border col">col-8</div>
-        <div class="border col">col-2</div>
-        <div class="border col">col-1</div>
-        <div class="border col">col-1</div>
-      </div>
-      <q-separator class="q-my-md" />
-      <div class="row">
-        <div class="border col-auto">col-1</div>
-        <div class="border col">col-8</div>
-        <div class="border col">col-2</div>
-        <div class="border col">col-1</div>
-        <div class="border col">col-1</div>
-      </div>
-      <q-separator class="q-my-md" />
-      <div class="row">
-        <div class="border col-grow">col-1</div>
-        <div class="border col">col-8</div>
-        <div class="border col">col-2</div>
-        <div class="border col">col-1</div>
-        <div class="border col">col-1</div>
-      </div>
-      <q-separator class="q-my-md" />
-      <div class="row no-wrap">
-        <div class="border col-auto">col-autocol-autocol-autocol-auto</div>
-        <div class="border col-shrink">
-          col-shrinkcol-shrinkcol-shrinkcol-shrink
+        <div class="q-gutter-x-lg">
+          <span>게시물 123</span>
+          <span>팔로워 123</span>
+          <span>팔로우 123</span>
         </div>
-        <div class="border col">col-2</div>
-        <div class="border col">col-1</div>
-        <div class="border col">col-1</div>
+        <div>자기소개<br />어쩌고<br />저쩌고</div>
       </div>
     </section>
-    <section class="q-mb-xl"></section>
   </q-page>
 </template>
 
 <script setup></script>
 
 <style lang="scss" scoped>
-.square {
-  width: 80px;
-  height: 80px;
-  background-color: $primary;
-  border: 1px solid #000;
-  display: inline-block;
-  font-weight: 900;
-  color: #fff;
-}
-.border {
-  border: 1px solid #000;
-  padding: 8px;
+.q-page {
+  background: #fafafa;
 }
 </style>
